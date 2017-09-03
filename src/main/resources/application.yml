@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: stage
+    active: dev
 
 ---
 
@@ -10,11 +10,11 @@ spring:
 message.response:   Hello from DEV spring boot properties
 
 kafka.broker: localhost:9092,localhost:9093,localhost:9094
-enable.auto.commit: true
+enable.auto.commit: false
 auto.commit.interval.ms:  100
 group.id: group1
 kafka.auto.offset.reset: earliest
-kafka.topic: my-topic
+kafka.topic: kafka-spring-example
 
 
 ---
