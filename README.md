@@ -45,7 +45,7 @@ Environment variable can be set through this .yml file or during start up of the
 java -jar -Dspring.profiles.active=dev mySpringApplication.jar
 ```
 
-These value can be accessed through a environment bean 
+All application property values can be accessed through a environment bean 
 ```java
 @Autowired
 private Environment env;
