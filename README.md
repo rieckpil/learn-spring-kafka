@@ -2,7 +2,7 @@
 
 Part of the Udemy course for learning Kafka with Spring
 
-### Using multiple Spring application properties via a properties.yml
+### Using multiple spring application properties via a properties.yml
 
 ```yaml
 spring:
@@ -40,7 +40,17 @@ spring:
 ---
 ```
 
-Enivroment variable can be set through this .yml file or during start up of the app:
+Environment variable can be set through this .yml file or during start up of the app:
 ```bash
 java -jar -Dspring.profiles.active=dev mySpringApplication.jar
+```
+
+These value can be accessed through a environment bean 
+```java
+@Autowired
+private Environment env;
+
+public static void main(String[] args){
+  env.getProperty(value);
+}
 ```
