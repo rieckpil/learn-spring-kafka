@@ -23,6 +23,12 @@ spring:
   profiles: stage
 
 message.response:   Hello from STAGE spring boot properties
+kafka.broker: localhost:9092,localhost:9093,localhost:9094
+enable.auto.commit: false
+auto.commit.interval.ms:  100
+group.id: group1
+kafka.auto.offset.reset: earliest
+kafka.topic: my-topic
 
 ---
 
